@@ -1,8 +1,12 @@
 {
   "name": "fetchjson",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,5 +15,10 @@
   "description": "",
   "dependencies": {
     "axios": "^1.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
 }
